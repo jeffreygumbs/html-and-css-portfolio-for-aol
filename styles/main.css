@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fruktur:ital@0;1&family=Pacifico&family=Shadows+Into+Light&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+     background-color: #313030;
+     color: #fff;
+     height: 100vh;
+     
+}
+.logo{
+    font-family: "Fruktur", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+}
+.logo span{
+    color: #52a8f9;
+    border: #ffffff;
+}
+
+nav{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul  {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #fff;
+}
+
+nav ul li{
+     list-style: none;
+     margin-left: 1rem;
+     cursor: pointer;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpeg') ;
+    
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     height: 100vh;
+}
+
+#main-text{
+     font-size: 5rem;
+     text-align: center;
+}
+#secund-text{
+     font-size: 3rem;
+     text-align: center;
+     font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid #fff;
+  animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
+}
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.text-container{
+    Margin: auto
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+@keyframes appear2 {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.img-container{
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.img-container-2{
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25rem
+
+}
+form input{
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+form textarea{
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+.submit{
+    background-color: #0582f7;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button{
+    margin-top: 1.5rem;
+    background-color: #0582f7;
+    color: #ffffff;
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+}
+.button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size:2rem;
+}
